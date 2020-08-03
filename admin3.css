@@ -1,0 +1,78 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+
+
+body {
+	background-image: url("manback.jpg");
+	background-size: 100% 100%;
+}
+
+.header {
+	padding-left: 40%;
+	padding-right: 40%;
+	padding-top: 0%;
+	padding-bottom: 5%;
+}
+
+#header1 {
+	background: rgba(200, 200, 200, 0.7);
+	padding: 2%;
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+	border-radius: 10px;
+}
+
+.frame01 {
+	position: relative;
+	background: rgba(250, 250, 250, 0.7);
+	border-radius: 30px;
+	transition: all .4s ease-in-out;
+	padding-left: 10%;
+	width: 88%;
+	left: 1%
+}
+
+.btn01 {
+	position: relative;
+	border: solid;
+	border-color: #9f345b;
+	border-radius: 20px;
+	background:  rgba(250, 250, 250, 0);
+	transition: all .4s ease-in-out;
+	height: 60px;
+	width: 300px;
+	font-size: 20px;
+	margin: 20px;
+}
+
+.btn01:hover {
+	background-color: #9f345b;
+	opavity: 1;
+	color: white;
+}
+
+.btn02 {
+	position: relative;
+	border: solid;
+	border-color: white;
+	border-radius: 20px;
+	background:  rgba(250, 250, 250, 0);
+	transition: all .4s ease-in-out;
+	height: 40px;
+	width: 120px;
+	font-size: 20px;
+	margin: 0;
+	color:white;
+	
+}
+
+.btn02:hover {
+	background-color: #9f345b;
+	opacity: 1;
+	color: yellow;
+}

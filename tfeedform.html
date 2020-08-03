@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head><title>Teacher</title>
+<link rel="stylesheet" type="text/css" href="feed3.css">
+<a href="home.html">
+		<button class="btn02" type="button">HOME</button>
+</a>
+<a href="teachlog.html">
+		<button class="btn03" type="button">PREV</button>
+</a>
+
+</div>
+</head>
+<body>
+<div class="form02">
+	<u><h1>FILL THE INFORMATION:</h1></u>
+	<form class="txt" action="tfeed.php" method="POST">
+		
+			<div>
+				<label >1.How many conference have you attended? </label>
+				<input type="text" name="ca" id='ca' value="" onkeyup="cal(this.value);" />
+			
+				<div id="conf"></div>
+			</div>
+			<br>
+				
+			<div>
+				<label>2.How many conference have you conducted?</label>
+				<input type="text" name="cc" id='cc' value="" onkeyup="cal1(this.value);" />
+				<div id="con"></div>
+			</div>
+			<br>
+
+			<div>
+				<label>3.No of paper publications?</label>
+				<input type="text" name="pp" id='pp' value="" onkeyup="cal2(this.value);" />
+				<div id="co"></div>
+			</div>
+			<br>
+
+			<div>
+				<label>4.Department level committee's joined? </label>
+				<input class="rd01" type="radio" name="dlc" value="1">YES 
+				<input type="radio" name="dlc" value="0"> NO
+			</div>
+			<br><br>
+			
+			<div>
+				<label>5.College level committee's joined? </label>
+				<input type="radio" name="clc" value="1">YES 
+				<input type="radio" name="clc" value="0"> NO
+			</div>
+			<br><br>
+			
+			<div>
+				<label>6.Usage of ICT's? </label>
+				<input type="radio" name="ict" value="1">YES 
+				<input type="radio" name="ict" value="0"> NO
+			</div>
+			<br><br>
+		
+			<input type="submit" name="submit" value="SUBMIT">
+		  
+			
+	</form>
+
+
+</div>
+
+<script>
+var cal = function(param)
+{
+	var i, target = document.getElementById('conf');
+    target.innerHTML = "";
+    var name =" ";
+	var ame =" ";
+    for(i = 1; i <= param; i += 1)
+	{ 
+		ame=("place"+i);
+		name=("date"+i);
+        target.innerHTML += '<input type="text" name='+name+' placeholder="Enter the date of conference '+i+'">';
+		target.innerHTML += '<input type="text" name='+ame+' placeholder="Enter the place of conference '+i+'"><br>';
+    }
+	
+}
+
+var cal1 = function(param)
+{
+	var i, target = document.getElementById('con');
+    target.innerHTML = "";
+    var name =" ";
+	var ame =" ";
+    for(i = 1; i <= param; i += 1)
+	{ 
+		ame=("plac"+i);
+		name=("dat"+i);
+        target.innerHTML += '<input type="text" name='+name+' placeholder="Enter the date of conference '+i+'">';
+		target.innerHTML += '<input type="text" name='+ame+' placeholder="Enter the place of conference '+i+'"><br>';
+    }
+	
+}
+
+var cal2 = function(param)
+{
+	var i, target = document.getElementById('co');
+    target.innerHTML = "";
+    var name =" ";
+	var ame =" ";
+    for(i = 1; i <= param; i += 1)
+	{ 
+		ame=("pla"+i);
+		name=("da"+i);
+        target.innerHTML += '<input type="text" name='+name+' placeholder="Enter the date of paper published '+i+'">';
+		target.innerHTML += '<input type="text" name='+ame+' placeholder="Enter the name of journal '+i+' in which your paper is published"><br>';
+    }
+	
+}
+</script>
+</body>
+</html>
